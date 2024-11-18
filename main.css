@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1d1d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    width: 100%;
+    background-color: #2A2A2A;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    color: #5e95c9;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.search-sort {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.search-sort input,
+.search-sort select,
+.search-sort button {
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1em;
+}
+
+#searchInput {
+    width: 200px;
+    font-size: 1em;
+}
+
+#typeFilter,
+#sortOrder {
+    width: 80px;
+    font-size: 1em;
+}
+
+#searchButton {
+    background-color: #D9534F;
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#searchButton:hover {
+    background-color: #049f16;
+}
+
+
+#movie-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .movie-card {
+    background: linear-gradient(145deg, #333, #222);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 30px;
+    color: white;
+  }
+  
+  .movie-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+  }
+  
+  .movie-card .details {
+    padding: 15px;
+  }
+  
+  .movie-card .details h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .movie-card .details p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #bbb;
+  }
+  
+  .movie-card .rating {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffcc00;
+  }
+  .search-sort select:hover,
+.search-sort input:hover {
+    border-color: #5e95c9;
+    background-color: #2A2A2A;
+    color: #fff;
+}

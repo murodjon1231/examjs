@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <img src="./MOVIES!.svg" alt="Movies Logo">
+        <div class="search-sort">
+            <input type="text" id="searchInput" placeholder="Enter movie name">
+            <select id="categoryFilter">
+                <option value="all">All</option>
+            </select>
+            <select id="sortOrder">
+                <option value="none">Sort</option>
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+                <option value="rating-asc">Rating (1-10)</option>
+                <option value="rating-desc">Rating (10-1)</option>
+            </select>
+            <button id="searchButton">Search</button>
+        </div>
+    </header>
+    <main id="movie-container" class="movie-container"></main>
+    <script src="./movies.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
